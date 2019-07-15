@@ -7,7 +7,6 @@
     mod(CodeMirror);
 })(function(CodeMirror, eslint) {
   "use strict";
-  // declare global: JSHINT
 
   const standard = {
     "parserOptions": {
@@ -228,7 +227,7 @@
     for ( var i = 0; i < errors.length; i++) {
       var error = errors[i];
       if (error) {
-        console.log(error)
+
         if (error.line <= 0) {
           if (window.console) {
             window.console.warn('Cannot display JSHint error (invalid line ' + error.line + ")", error);
@@ -262,7 +261,6 @@
         output.push(hint)
       }
     }
-    console.log(output)
     return output
   }
 })
