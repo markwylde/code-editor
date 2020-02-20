@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify lib/index.js -o bundle.js",
+    "build:fastn": "browserify fastn/index.js -o fastn/bundle.js",
     "watch": "watchify lib/index.js -o bundle.js",
+    "watch:fastn": "watchify fastn/index.js -o lib/fastn/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
